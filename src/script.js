@@ -20,17 +20,36 @@ const sizes = {
     height: window.innerHeight
 }
 
+// Resize
+window.addEventListener('resize', ()=>
+{
+    // Update sizes
+    sizes.width = window.innerWidth
+    sizes.height = window.innerHeight
+
+    // Update Camera
+    camera.aspect = sizes.width / sizes.height
+    camera.updateProjectionMatrix()
+
+    // Update Renderer
+    renderer.setSize(sizes.width, sizes.height)
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+})
+
 // Camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1 , 100)
-camera.position.z = 3
+camera.position.x = 1
+camera.position.y = 1
+camera.position.z = 2
 scene.add(camera)
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector('canvas.webgl')
 })
-
 renderer.setSize(sizes.width, sizes.height)
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+
 
 // Controls
 const controls = new OrbitControls(camera, canvas)
