@@ -1,7 +1,7 @@
 # Three.js Basics
 
 ## Deployment
-[Three Js Basics](https://three-js-basics.vercel.app/)
+[three.js Basics](https://three-js-basics.vercel.app/)
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
