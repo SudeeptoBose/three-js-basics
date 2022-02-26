@@ -1,4 +1,7 @@
-# Three.js Journey
+# Three.js Basics
+
+## Deployment
+[Three Js Basics](https://three-js-basics.vercel.app/)
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
@@ -14,3 +17,9 @@ npm run dev
 # Build for production in the dist/ directory
 npm run build
 ```
+## Interactivity
+- Rotate camera with left click
+- Displace camera position with right click
+- Zoom in and out with mouse wheel
+- Controls tab on top right allows customization
+- Mobile responsive
