@@ -26,7 +26,7 @@ fontLoader.load(
     (font) =>
     {
         const textGeometry = new TextGeometry(
-            'Sudeepto Bose\nCreative Dev\nHobbyist Artist',
+            'Sudeepto Bose\nCreative Developer\n3D Modeling Hobbyist',
             {
                 font: font,
                 size: 0.5,
